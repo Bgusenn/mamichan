@@ -1,46 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
-    <link rel="stylesheet" href="login.css" />
+    <title>Register | Mamichan</title>
+    <link href="dist/output.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
     <style>
-      .error {
-        color: red;
-        font-size: 13px;
-        margin-top: 4px;
+      body {
+        font-family: "Poppins", sans-serif;
       }
     </style>
   </head>
-  <body class="login-page">
-    <div class="login-container">
-      <img src="image/Logo 2.png" alt="Logo" />
-      <form id="registerForm" onsubmit="return validateForm(event)">
-        <input type="text" id="name" placeholder="nama lengkap" />
-        <div id="nameError" class="error"></div>
 
-        <input type="email" id="email" placeholder="email" />
-        <div id="emailError" class="error"></div>
-
-        <input type="password" id="password" placeholder="password" />
-        <div id="passwordError" class="error"></div>
-
-        <input type="password" id="confirm" placeholder="konfirmasi password" />
-        <div id="confirmError" class="error"></div>
-
-        <input type="tel" id="phone" placeholder="nomor telepon" />
-        <div id="phoneError" class="error"></div>
-
-        <button type="submit" class="login-btn">Register</button>
-      </form>
-      <div class="register-link">
-        Sudah punya akun? <a href="login.html">Masuk</a>
+  <body class="min-h-screen flex items-center justify-center px-4">
+    <div class="w-full max-w-md">
+      <!-- Logo -->
+      <div class="flex mb-6 py-6 text-2xl font-semibold">
+        <h1>Register</h1>
       </div>
+
+      <!-- Form Register -->
+      <form
+        id="registerForm"
+        onsubmit="return validateForm(event)"
+        class="space-y-4"
+      >
+        <input
+          type="text"
+          id="name"
+          placeholder="Nama Lengkap"
+          class="w-full px-4 py-2 border bg-[#F2F2F2] rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#7F5539]"
+        />
+        <p id="nameError" class="text-red-500 text-sm"></p>
+
+        <input
+          type="email"
+          id="email"
+          placeholder="Email"
+          class="w-full px-4 py-2 border bg-[#F2F2F2] rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#7F5539]"
+        />
+        <p id="emailError" class="text-red-500 text-sm"></p>
+
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          class="w-full px-4 py-2 border bg-[#F2F2F2] rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#7F5539]"
+        />
+        <p id="passwordError" class="text-red-500 text-sm"></p>
+
+        <input
+          type="password"
+          id="confirm"
+          placeholder="Konfirmasi Password"
+          class="w-full px-4 py-2 border bg-[#F2F2F2] rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#7F5539]"
+        />
+        <p id="confirmError" class="text-red-500 text-sm"></p>
+
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Nomor Telepon"
+          class="w-full px-4 py-2 border bg-[#F2F2F2] rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#7F5539]"
+        />
+        <p id="phoneError" class="text-red-500 text-sm"></p>
+
+        <button
+          type="submit"
+          class="w-full bg-[#7F5539] text-white py-2 rounded-md hover:bg-[#6B442C] transition duration-200"
+        >
+          Daftar
+        </button>
+      </form>
+
+      <p class="text-sm text-center mt-4">
+        Sudah punya akun?
+        <a href="login.html" class="text-[#7F5539] hover:underline">Masuk</a>
+      </p>
     </div>
 
     <script>
@@ -53,49 +93,49 @@
         const confirm = document.getElementById("confirm").value.trim();
         const phone = document.getElementById("phone").value.trim();
 
-        // Bersihkan pesan error sebelumnya
-        document.getElementById("nameError").innerText = "";
-        document.getElementById("emailError").innerText = "";
-        document.getElementById("passwordError").innerText = "";
-        document.getElementById("confirmError").innerText = "";
-        document.getElementById("phoneError").innerText = "";
+        // Reset error messages
+        document.getElementById("nameError").textContent = "";
+        document.getElementById("emailError").textContent = "";
+        document.getElementById("passwordError").textContent = "";
+        document.getElementById("confirmError").textContent = "";
+        document.getElementById("phoneError").textContent = "";
 
         let isValid = true;
 
         if (!name) {
-          document.getElementById("nameError").innerText = "Nama wajib diisi";
+          document.getElementById("nameError").textContent = "Nama wajib diisi";
           isValid = false;
         }
 
         if (!email) {
-          document.getElementById("emailError").innerText = "Email wajib diisi";
+          document.getElementById("emailError").textContent =
+            "Email wajib diisi";
           isValid = false;
         }
 
         if (!password) {
-          document.getElementById("passwordError").innerText =
+          document.getElementById("passwordError").textContent =
             "Password wajib diisi";
           isValid = false;
         }
 
         if (!confirm) {
-          document.getElementById("confirmError").innerText =
-            "Konfirmasi sandi wajib diisi";
+          document.getElementById("confirmError").textContent =
+            "Konfirmasi password wajib diisi";
           isValid = false;
         } else if (confirm !== password) {
-          document.getElementById("confirmError").innerText =
+          document.getElementById("confirmError").textContent =
             "Konfirmasi tidak cocok";
           isValid = false;
         }
 
         if (!phone) {
-          document.getElementById("phoneError").innerText =
+          document.getElementById("phoneError").textContent =
             "Nomor telepon wajib diisi";
           isValid = false;
         }
 
         if (isValid) {
-          // Jika semua kolom valid, arahkan ke login
           window.location.href = "login.html";
         }
 
