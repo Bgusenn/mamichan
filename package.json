@@ -1,0 +1,11 @@
+{
+  "name": "mamichan",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./dist/output.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}

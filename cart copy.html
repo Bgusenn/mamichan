@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mamichan | Cart</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="image/logo.png" alt="Logo" class="logo-image" />
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Produk</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="icons">
+        <a href="login.html" class="icon-link">
+          <img src="image/Profile.png" alt="Profile" class="icon" />
+        </a>
+        <img src="image/Search.png" alt="Search" class="icon" />
+        <a href="review.html" class="icon-link">
+          <img src="image/Love.png" alt="Favorite" class="icon" />
+        </a>
+        <img src="image/Keranjang.png" alt="Cart" class="icon" />
+    </div>
+  </header>
+
+    <!-- Shop Hero Section -->
+    <section class="shop-hero">
+    <div class="shop-hero-content">
+        <h1>Cart</h1>
+        <p><a href="index.html">Home</a> &gt; Shop</p>
+    </div>
+    </section>
+
+    <!-- Cart -->
+      <div class="cart-container">
+    <!-- KIRI -->
+    <div class="cart-left" id="cart-item">
+      <div class="cart-header">
+        <div class="col col-product">Product</div>
+        <div class="col col-price">Price</div>
+        <div class="col col-qty">Quantity</div>
+        <div class="col col-subtotal">Subtotal</div>
+      </div>
+
+      <div class="cart-item-row">
+        <img src="image/PC1.png" class="product-img" alt="Product Image">
+        <div class="product-infos">
+          <div class="col col-product-name">Yoora Tunik</div>
+          <div class="col col-price-value">Rp. 60,000.00</div>
+          <div class="col col-qty-box">
+            <input type="" value="1" class="product-qty">
+          </div>
+          <div class="col-subtotal-value">Rp. 60,000.00</div>
+          <div class="col col-delete-icon">
+            <img src="image/hapus.png" class="delete-icon" onclick="deleteCartItem()" alt="Delete">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KANAN -->
+    <div class="cart-summary" id="cart-summary">
+      <h2 class="summary-title">Cart Totals</h2>
+      <div class="summary-row">
+        <span class="labeli">Subtotal</span>
+        <span class="value-white" id="subtotal">Rp. 60,000.00</span>
+      </div>
+      <div class="summary-row">
+        <span class="labeli">Total</span>
+        <span class="value-black" id="total">Rp. 60,000.00</span>
+      </div>
+      <div class="btn-containers">
+        <a href="checkout.html">
+        <button class="checkout-btn">Check Out</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    function deleteCartItem() {
+      document.getElementById("cart-item").style.display = "none";
+      document.getElementById("cart-summary").style.display = "none";
+    }
+  </script>
+ 
+    <!-- Features -->
+        <section class="features">
+        <div class="feature-item">
+            <img src="image/trophy.png" alt="High Quality" />
+            <div class="feature-text">
+            <h4>High Quality</h4>
+            <p>crafted from top materials</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <img src="image/guarantee.png" alt="Warranty Protection" />
+            <div class="feature-text">
+            <h4>Warranty Protection</h4>
+            <p>Over 2 years</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <img src="image/shipping.png" alt="Free Shipping" />
+            <div class="feature-text">
+            <h4>Free Shipping</h4>
+            <p>Order over 150 $</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <img src="image/cs.png" alt="24 / 7 Support" />
+            <div class="feature-text">
+            <h4>24 / 7 Support</h4>
+            <p>Dedicated support</p>
+            </div>
+        </div>
+        </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-columns">
+      <div>
+        <h4>Mamichan</h4>
+        <p>400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Produk</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="#">Payment Options</a>
+        <a href="#">Returns</a>
+        <a href="#">Privacy Policies</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      2025 Mamichan. All rights reserved
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+.login-container {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  padding: 50px 30px;
+  min-height: 550px;
+  margin: 60px auto;
+  border-radius: 5px;
+}
+
+.login-container img {
+  width: 100px; /* Perbesar logo */
+  margin-bottom: 30px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1.5px solid #999;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 16px;
+  background-color: #7A4A2F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  text-align: left;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+.login-btn {
+  width: 100%;
+  background-color: #70492b;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: px;
+}
+
+.login-btn:hover {
+  background-color: #5a3a21;
+}
+
+.register-link {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.register-link a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+
+.register-container {
+  font-family: poppins, sans-serif;
+  width: 90%;
+  max-width: 600px;
+  padding: 30px;
+  margin-left: 50px; 
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #666;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 20px;
+  width: 30%;
+  padding: 10px;
+  background-color: #7d4c35;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #693d2c;
+}
+
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+.login-link a {
+  color: #000;
+  text-decoration: none;
+}
+
+.error-message {
+  color: red;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+

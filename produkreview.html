@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mamichan | Single Produk Review</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+  <header>
+    <img src="image/logo.png" alt="Logo" class="logo-image" />
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Produk</a>
+      <a href="#">Tentang Kami</a>
+      <a href="#">Kontak</a>
+    </nav>
+    <div class="icons">
+        <a href="login.html" class="icon-link">
+          <img src="image/Profile.png" alt="Profile" class="icon" />
+        </a>
+        <img src="image/Search.png" alt="Search" class="icon" />
+        <a href="review.html" class="icon-link">
+          <img src="image/Love.png" alt="Favorite" class="icon" />
+        </a>
+        <a href="cart.html" class="icon-link">
+          <img src="image/Keranjang.png" alt="Cart" class="icon" />
+        </a>
+    </div>
+  </header>
+
+    <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <img src="image/arrow.png" alt="arrow" class="breadcrumb-arrow">
+        <a href="shop.html">Shop</a>
+        <img src="image/arrow.png" alt="arrow" class="breadcrumb-arrow">
+        <img src="image/line.png" alt="line" class="breadcrumb-line">
+        <span class="current">Yoora Tunik</span>
+        
+    </div>
+
+  <div class="product-container">
+    <div class="product-left">
+      <div class="thumbnails">
+        <img src="image/M1.png" onclick="changeImage(this)">
+        <img src="image/M2.png" onclick="changeImage(this)">
+        <img src="image/M3.png" onclick="changeImage(this)">
+        <img src="image/M4.png" onclick="changeImage(this)">
+      </div>
+      <div class="main-image">
+        <img id="mainImage" src="image/PD1.png" alt="Yoora Tunik">
+      </div>
+    </div>
+
+    <div class="product-right">
+      <p class="product-title">Yoora Tunik</p>
+      <p class="price">Rp. 60,000.00</p>
+      <div class="rating">
+        <img src="image/star.png" alt="Rating Stars" class="stars" />
+        <img src="image/line.png" alt="Divider" class="divider" />
+        <span>5 Customer Review</span>
+    </div>
+      <p class="short-desc">
+        Mamichan Yoora Tunik Set (BUSUI) – Couple Set Ibu dan Anak - Family Set
+      </p>
+
+    <div class="product-options">
+    <div class="size">
+        <p class="label">Size</p>
+        <button class="active">L</button>
+        <button>XL</button>
+        <button>XS</button>
+    </div>
+
+    <div class="color">
+        <p class="label">Color</p>
+        <span class="dot purple"></span>
+        <span class="dot black"></span>
+        <span class="dot gold"></span>
+    </div>
+
+    <div class="actions">
+        <div class="qty">
+        <button>-</button>
+        <input type="text" value="1" readonly>
+        <button>+</button>
+        </div>
+        <a href="cart.html">
+        <button class="add-to-cart">Add To Cart</button>
+        </a>
+        <button class="compare">+ Compare</button>
+    </div>
+    </div>
+        <hr class="page">
+        <div class="product-info">
+        <div><strong>SKU</strong> : <span>SS001</span></div>
+        <div><strong>Category</strong> : <span>Pakaian Wanita</span></div>
+        <div><strong>Tags</strong> : <span>Pakaian Wanita, Set, Pakaian Keluarga</span></div>
+        <div class="product-info">
+          <div class="share">
+            <strong>Share</strong> : 
+            <a href="#"><img src="image/icons_facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="image/icons_linkedin.png" alt="Linkedin"></a>
+            <a href="#"><img src="image/icons_twitter.png" alt="Twitter"></a>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="desc-wrapper">
+  <hr class="full-line">
+
+  <div class="tab-menu">
+    <a href="produk.html" class="tab no-link-style">Description</a>
+    <span class="tab">Additional Information</span>
+    <span class="tab active">Reviews [5]</span>
+  </div>
+
+<!-- Review Produk -->
+<div class="review-section">
+  <div class="review">
+    <span class="reviewer-name">Nisa Putri</span>
+    <img src="image/star2.png" alt="Rating" class="star-icon"/>
+     <p class="review-comment">Baju Bagus Sekali!!</p>
+  </div>
+  <div class="review">
+    <span class="reviewer-name">Sari Amelia</span>
+    <img src="image/star2.png" alt="Rating" class="star-icon"/>
+     <p class="review-comment">Baju Bagus Sekali!!</p>
+  </div>
+  <div class="review">
+    <span class="reviewer-name">Rahmat Hidayat</span>
+    <img src="image/star2.png" alt="Rating" class="star-icon"/>
+     <p class="review-comment">Baju Bagus Sekali!!</p>
+  </div>
+</div>
+
+<button class="show-more-btn">Show More</button>
+<hr class="full-line">
+</div>
+
+<!-- Products -->
+<h2 class="section-title">Related Products</h2>
+<div class="product-section">
+  <div class="product-card">
+    <div class="product-image">
+      <img src="image/RD1.png" alt="Zalina Series" />
+      <div class="overlay">
+        <button>Add to cart</button>
+      </div>
+    </div>
+    <h4>Zalina Series</h4>
+    <p>Baju Couple Keluarga</p>
+    <p><strong>Rp 72.000</strong> <del>Rp 92.000</del></p>
+  </div>
+
+  <div class="product-card">
+    <div class="product-image">
+      <img src="image/RD2.png" alt="Zalina Series" />
+      <div class="overlay">
+        <button>Add to cart</button>
+      </div>
+    </div>
+    <h4>Zalina Series</h4>
+    <p>Baju Couple Keluarga</p>
+    <p><strong>Rp 72.000</strong> <del>Rp 92.000</del></p>
+  </div>
+
+  <div class="product-card">
+    <div class="product-image">
+      <img src="image/RD3.png" alt="Zalina Series" />
+      <div class="overlay">
+        <button>Add to cart</button>
+      </div>
+    </div>
+    <h4>Zalina Series</h4>
+    <p>Baju Couple Keluarga</p>
+    <p><strong>Rp 72.000</strong> <del>Rp 92.000</del></p>
+  </div>
+
+  <div class="product-card">
+    <div class="product-image">
+      <img src="image/RD4.png" alt="Zalina Series" />
+      <div class="overlay">
+        <button>Add to cart</button>
+      </div>
+    </div>
+    <h4>Zalina Series</h4>
+    <p>Baju Couple Keluarga</p>
+    <p><strong>Rp 72.000</strong> <del>Rp 92.000</del></p>
+  </div>
+
+  <script>
+    function changeImage(el) {
+      document.getElementById("mainImage").src = el.src;
+    }
+  </script>
+  </div>
+  </div>
+
+  <button class="show-more-btn">Show More</button>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-columns">
+      <div>
+        <h4>Mamichan</h4>
+        <p>400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Produk</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="#">Payment Options</a>
+        <a href="#">Returns</a>
+        <a href="#">Privacy Policies</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      2025 Mamichan. All rights reserved
+    </div>
+  </footer>
+</body>
+</html>

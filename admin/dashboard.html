@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard | Mamichan</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-100 font-[Poppins]">
+    <div class="flex h-screen">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white shadow-lg hidden md:block">
+        <div class="px-6 py-4 text-xl font-bold">LOGO</div>
+        <nav class="mt-4 space-y-2">
+          <a
+            href="#"
+            class="flex items-center gap-2 px-6 py-2 text-gray-700 hover:bg-gray-100 rounded"
+          >
+            <i class="fas fa-chart-line"></i> Dashboard
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-2 px-6 py-2 text-gray-700 hover:bg-gray-100 rounded"
+          >
+            <i class="fas fa-box"></i> Orders
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-2 px-6 py-2 text-gray-700 hover:bg-gray-100 rounded"
+          >
+            <i class="fas fa-tag"></i> Products
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-2 px-6 py-2 text-gray-700 hover:bg-gray-100 rounded"
+          >
+            <i class="fas fa-users"></i> Users
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-2 px-6 py-2 text-gray-700 hover:bg-gray-100 rounded"
+          >
+            <i class="fas fa-comments"></i> Reviews
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="flex-1 flex flex-col">
+        <!-- Navbar -->
+        <header
+          class="bg-white shadow-lg px-6 py-4 flex items-center justify-end"
+        >
+          <div class="flex items-center gap-3 text-sm text-gray-600">
+            <span>Admin</span>
+            <i class="fas fa-user-circle text-xl"></i>
+          </div>
+        </header>
+
+        <!-- Main Dashboard Content -->
+        <main class="p-6 overflow-y-auto">
+          <div class="py-2 mb-4">
+            <h1 class="text-2xl font-semibold">Dashboard Admin</h1>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-4 rounded shadow">
+              <p class="text-sm text-gray-500 flex items-center gap-2">
+                <i class="fas fa-box-open"></i> Orders
+              </p>
+              <p class="text-xl font-semibold">150</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <p class="text-sm text-gray-500 flex items-center gap-2">
+                <i class="fas fa-tags"></i> Products
+              </p>
+              <p class="text-xl font-semibold">35</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <p class="text-sm text-gray-500 flex items-center gap-2">
+                <i class="fas fa-users"></i> Users
+              </p>
+              <p class="text-xl font-semibold">1,250</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <p class="text-sm text-gray-500 flex items-center gap-2">
+                <i class="fas fa-comment"></i> Reviews
+              </p>
+              <p class="text-xl font-semibold">87</p>
+            </div>
+          </div>
+
+          <!-- Latest Orders Table -->
+          <div class="mt-10 bg-white rounded shadow overflow-x-auto">
+            <table class="min-w-full text-sm">
+              <thead>
+                <tr class="bg-gray-50 text-left">
+                  <th class="px-6 py-3 font-medium text-gray-600">Order ID</th>
+                  <th class="px-6 py-3 font-medium text-gray-600">Customer</th>
+                  <th class="px-6 py-3 font-medium text-gray-600">Date</th>
+                  <th class="px-6 py-3 font-medium text-gray-600">Total</th>
+                  <th class="px-6 py-3 font-medium text-gray-600">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-t">
+                  <td class="px-6 py-4">#1001</td>
+                  <td class="px-6 py-4">Nisa</td>
+                  <td class="px-6 py-4">03 Jul 2025</td>
+                  <td class="px-6 py-4">Rp 120.000</td>
+                  <td class="px-6 py-4 text-green-600">Completed</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="px-6 py-4">#1002</td>
+                  <td class="px-6 py-4">Rina</td>
+                  <td class="px-6 py-4">02 Jul 2025</td>
+                  <td class="px-6 py-4">Rp 180.000</td>
+                  <td class="px-6 py-4 text-yellow-600">Pending</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

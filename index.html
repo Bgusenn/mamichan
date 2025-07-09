@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mamichan | Home</title>
+    <link href="dist/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-[Poppins] bg-white text-[#333]">
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-50 flex justify-between items-center px-32 py-4 shadow-md bg-white"
+    >
+      <img src="image/logo.png" alt="Mamichan Logo" class="h-12" />
+
+      <nav class="flex ml-24 text-sm text-black gap-16 font-medium">
+        <a
+          href="index.html"
+          class="transition transform duration-300 hover:-translate-y-1"
+          >Home</a
+        >
+        <a
+          href="shop.html"
+          class="transition transform duration-300 hover:-translate-y-1"
+          >Produk</a
+        >
+        <a
+          href="#"
+          class="transition transform duration-300 hover:-translate-y-1"
+          >Tentang Kami</a
+        >
+        <a
+          href="#"
+          class="transition transform duration-300 hover:-translate-y-1"
+          >Kontak</a
+        >
+      </nav>
+
+      <div class="flex gap-6 items-center">
+        <a
+          href="login.html"
+          class="transition transform duration-300 hover:-translate-y-1"
+        >
+          <img src="image/Profile.png" alt="Profile" class="h-5" />
+        </a>
+        <img
+          src="image/Search.png"
+          alt="Search"
+          class="h-5 transition transform duration-300 hover:-translate-y-1"
+        />
+        <a
+          href="review.html"
+          class="transition transform duration-300 hover:-translate-y-1"
+        >
+          <img src="image/Love.png" alt="Favorite" class="h-5" />
+        </a>
+        <a
+          href="cart.html"
+          class="transition transform duration-300 hover:-translate-y-1"
+        >
+          <img src="image/Keranjang.png" alt="Cart" class="h-5" />
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[90vh] w-full overflow-hidden">
+      <!-- Gambar sebagai latar -->
+      <img
+        src="image/bgg.png"
+        class="absolute top-0 left-0 w-full h-full object-cover object-top z-0"
+        alt="Background"
+      />
+
+      <!-- Konten card di atas gambar -->
+      <div
+        class="relative z-10 h-full flex items-center justify-end px-4 sm:px-8 lg:px-16"
+      >
+        <div
+          class="bg-[#FFF3E3] p-8 max-w-[643px] w-full rounded-lg shadow-lg text-[#7F5539]"
+        >
+          <small class="uppercase tracking-wide text-sm text-amber-800">
+            Produk Terbaru
+          </small>
+          <h1 class="text-4xl sm:text-5xl font-bold leading-tight mt-2 mb-4">
+            Temukan Baju Koleksi Terbaru<br />
+          </h1>
+          <p class="text-base sm:text-lg mb-6">
+            Busana keluarga dengan desain modern dan bahan nyaman. Cocok untuk
+            santai di rumah atau acara bersama.
+          </p>
+          <a
+            href="shop.html"
+            class="inline-block bg-[#7F5539] text-white px-6 py-2 rounded hover:bg-[#7c5b47] transition duration-300 transform hover:-translate-y-1 hover:scale-105"
+          >
+            BELI SEKARANG
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Browse The Range -->
+    <section class="py-12 px-6 text-center">
+      <h2 class="text-2xl font-bold mb-8">Jelajahi Produk</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div>
+          <img src="image/he1.jpg" alt="Dining" class="w-full mb-2" />
+          <p class="font-semibold">Baju Anak</p>
+        </div>
+        <div>
+          <img src="image/he3.jpg" alt="Living" class="w-full mb-2" />
+          <p class="font-semibold">Baju Menyusui</p>
+        </div>
+        <div>
+          <img src="image/he2.jpg" alt="Bedroom" class="w-full mb-2" />
+          <p class="font-semibold">Couple Set</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Products -->
+    <section class="py-12 px-6">
+      <h2 class="text-2xl font-bold text-center mb-8">Produk Kami</h2>
+
+      <!-- Grid Produk -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Ulangi untuk 16 produk -->
+        <!-- Product 1 -->
+        <div
+          class="bg-white shadow rounded-lg overflow-hidden hover:shadow-lg transition"
+        >
+          <a href="produk.html">
+            <img src="image/4.png" alt="Zalina Series" class="w-full" />
+          </a>
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">Zalina Series</h4>
+            <p class="text-sm text-gray-600">Baju Couple Keluarga</p>
+            <p class="mt-1 text-sm">
+              <strong>Rp 72.000</strong>
+              <del class="text-gray-400">Rp 92.000</del>
+            </p>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div
+          class="bg-white shadow rounded-lg overflow-hidden hover:shadow-lg transition"
+        >
+          <a href="produk.html">
+            <img src="image/5.png" alt="Zalina Series" class="w-full" />
+          </a>
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">Zalina Series</h4>
+            <p class="text-sm text-gray-600">Baju Couple Keluarga</p>
+            <p class="mt-1 text-sm">
+              <strong>Rp 72.000</strong>
+              <del class="text-gray-400">Rp 92.000</del>
+            </p>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div
+          class="bg-white shadow rounded-lg overflow-hidden hover:shadow-lg transition"
+        >
+          <a href="produk.html">
+            <img src="image/6.png" alt="Zalina Series" class="w-full" />
+          </a>
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">Zalina Series</h4>
+            <p class="text-sm text-gray-600">Baju Couple Keluarga</p>
+            <p class="mt-1 text-sm">
+              <strong>Rp 72.000</strong>
+              <del class="text-gray-400">Rp 92.000</del>
+            </p>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div
+          class="bg-white shadow rounded-lg overflow-hidden hover:shadow-lg transition"
+        >
+          <a href="produk.html">
+            <img src="image/7.png" alt="Zalina Series" class="w-full" />
+          </a>
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">Zalina Series</h4>
+            <p class="text-sm text-gray-600">Baju Couple Keluarga</p>
+            <p class="mt-1 text-sm">
+              <strong>Rp 72.000</strong>
+              <del class="text-gray-400">Rp 92.000</del>
+            </p>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div
+          class="bg-white shadow rounded-lg overflow-hidden hover:shadow-lg transition"
+        >
+          <a href="produk.html">
+            <img src="image/8.png" alt="Zalina Series" class="w-full" />
+          </a>
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">Zalina Series</h4>
+            <p class="text-sm text-gray-600">Baju Couple Keluarga</p>
+            <p class="mt-1 text-sm">
+              <strong>Rp 72.000</strong>
+              <del class="text-gray-400">Rp 92.000</del>
+            </p>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div
+          class="bg-white shadow rounded-lg overflow-hidden hover:shadow-lg transition"
+        >
+          <a href="produk.html">
+            <img src="image/9.png" alt="Zalina Series" class="w-full" />
+          </a>
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">Zalina Series</h4>
+            <p class="text-sm text-gray-600">Baju Couple Keluarga</p>
+            <p class="mt-1 text-sm">
+              <strong>Rp 72.000</strong>
+              <del class="text-gray-400">Rp 92.000</del>
+            </p>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div
+          class="bg-white shadow rounded-lg overflow-hidden hover:shadow-lg transition"
+        >
+          <a href="produk.html">
+            <img src="image/10.png" alt="Zalina Series" class="w-full" />
+          </a>
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">Zalina Series</h4>
+            <p class="text-sm text-gray-600">Baju Couple Keluarga</p>
+            <p class="mt-1 text-sm">
+              <strong>Rp 72.000</strong>
+              <del class="text-gray-400">Rp 92.000</del>
+            </p>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div
+          class="bg-white shadow rounded-lg overflow-hidden hover:shadow-lg transition"
+        >
+          <a href="produk.html">
+            <img src="image/11.png" alt="Zalina Series" class="w-full" />
+          </a>
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">Zalina Series</h4>
+            <p class="text-sm text-gray-600">Baju Couple Keluarga</p>
+            <p class="mt-1 text-sm">
+              <strong>Rp 72.000</strong>
+              <del class="text-gray-400">Rp 92.000</del>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tombol Show More -->
+      <div class="text-center mt-8">
+        <button
+          class="px-12 py-2 border border-[#B88E2F] text-[#B88E2F] font-semibold rounded hover:bg-[#B88E2F] hover:text-white transition duration-300"
+        >
+          lihat Selengkapnya
+        </button>
+      </div>
+    </section>
+
+    <!-- Explore More -->
+    <section class="py-12 px-4 sm:px-6 lg:px-16 bg-[#FCF8F3] mb-12">
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div class="flex-1">
+          <h2 class="text-2xl font-bold mb-4">50+ Inspirasi Pakaian Cantik</h2>
+          <p class="text-gray-600 mb-6">
+            Desainer kami telah membuat banyak prototipe ruangan cantik yang
+            menginspirasi Anda
+          </p>
+          <button
+            class="bg-[#8B4513] text-white font-semibold px-6 py-2 rounded hover:bg-[#a47d27] transition"
+          >
+            Jelajahi
+          </button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 flex-1">
+          <img
+            src="image/B1.png"
+            alt="Family Photo"
+            class="rounded-lg shadow object-cover w-full max-h-[500px]"
+          />
+          <img
+            src="image/B2.png"
+            alt="Fashion Set"
+            class="rounded-lg shadow object-cover w-full max-h-[500px]"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="bg-[#FAF3EA] py-12">
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-6 px-6 lg:px-32 text-center"
+      >
+        <div>
+          <img
+            src="image/trophy.png"
+            alt="High Quality"
+            class="mx-auto h-12 mb-2"
+          />
+          <h4 class="font-semibold">Kualitas Terbaik</h4>
+          <p class="text-sm text-gray-600">Terbuat dari bahan terbaik</p>
+        </div>
+        <div>
+          <img
+            src="image/guarantee.png"
+            alt="Warranty Protection"
+            class="mx-auto h-12 mb-2"
+          />
+          <h4 class="font-semibold">Perlindungan Garansi</h4>
+          <p class="text-sm text-gray-600">6 Bulan</p>
+        </div>
+        <div>
+          <img
+            src="image/shipping.png"
+            alt="Free Shipping"
+            class="mx-auto h-12 mb-2"
+          />
+          <h4 class="font-semibold">Pengiriman gratis</h4>
+          <p class="text-sm text-gray-600">Pembelian lebih dari 250.000</p>
+        </div>
+        <div>
+          <img
+            src="image/cs.png"
+            alt="24 / 7 Support"
+            class="mx-auto h-12 mb-2"
+          />
+          <h4 class="font-semibold">Layanan 24/7</h4>
+          <p class="text-sm text-gray-600">Layanan Khusus</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-10 px-6">
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto text-sm"
+      >
+        <div>
+          <h4 class="font-semibold mb-2">Mamichan</h4>
+          <p>
+            Jl. Kaliurang KM 10, Sleman, <br />
+            Daerah Istimewa Yogyakarta 55581, Indonesia
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2 gap-x-24">Link</h4>
+          <a href="shop.html" class="block hover:underline">Home</a>
+          <a href="shop.html" class="block hover:underline">Produk</a>
+          <a href="#" class="block hover:underline">Tentang kami</a>
+          <a href="#" class="block hover:underline">Kontak</a>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Bantuan</h4>
+          <a href="#" class="block hover:underline">Opsi Pembayaran</a>
+          <a href="#" class="block hover:underline">Pengembalian</a>
+          <a href="#" class="block hover:underline">Kebijakan Privasi</a>
+        </div>
+      </div>
+      <div class="text-center text-xs mt-6 text-gray-500">
+        © 2025 Mamichan. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

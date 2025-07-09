@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mamichan | Review</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <img src="image/logo.png" alt="Logo" class="logo-image" />
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Produk</a>
+        <a href="#">Tentang Kami</a>
+        <a href="#">Kontak</a>
+      </nav>
+      <div class="icons">
+        <a href="login.html" class="icon-link">
+          <img src="image/Profile.png" alt="Profile" class="icon" />
+        </a>
+        <img src="image/Search.png" alt="Search" class="icon" />
+        <img src="image/Love.png" alt="Favorite" class="icon" />
+        <a href="cart.html" class="icon-link">
+          <img src="image/Keranjang.png" alt="Cart" class="icon" />
+        </a>
+      </div>
+    </header>
+
+    <!-- Review -->
+
+    <!-- Review Section -->
+    <div class="container">
+      <!-- Gambar Produk -->
+      <div class="product-images">
+        <img src="image/R1.png" alt="Product Image" />
+        <div class="line-divider"></div>
+      </div>
+
+      <!-- Line Section dengan layout yang benar -->
+      <div class="line-section">
+        <div class="left-title">
+          <div class="title-text">Title</div>
+          <div class="title-text">Title</div>
+        </div>
+        <div class="right-stars">
+          <div class="top-stars">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <div class="title-text text-right">Title</div>
+        </div>
+      </div>
+
+      <!-- Garis panjang bawah -->
+      <div class="line-divider"></div>
+
+      <!-- Heading dan Deskripsi -->
+      <div class="heading">Heading</div>
+      <div class="description">
+        Untuk informasi lebih lanjut tentang produk dan layanan kami, jangan
+        ragu<br />
+        untuk mengirim email kepada kami. Staf kami akan selalu siap membantu
+        Anda.
+      </div>
+
+      <!-- Bintang Interaktif -->
+      <div class="star-rating" id="interactive-stars">
+        <span class="star" data-value="1">&#9734;</span>
+        <span class="star" data-value="2">&#9734;</span>
+        <span class="star" data-value="3">&#9734;</span>
+        <span class="star" data-value="4">&#9734;</span>
+        <span class="star" data-value="5">&#9734;</span>
+      </div>
+
+      <!-- Form Review -->
+      <form class="review-form">
+        <label for="review">Tambah Detail Ulasan</label>
+        <textarea id="review" placeholder="Text"></textarea>
+        <div class="btn-container">
+          <button type="submit">Simpan</button>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      const ratingStars = document.querySelectorAll("#interactive-stars .star");
+      let selectedRating = 0;
+
+      ratingStars.forEach((star, index) => {
+        star.addEventListener("click", () => {
+          selectedRating = index + 1;
+          updateStars();
+        });
+      });
+
+      function updateStars() {
+        ratingStars.forEach((star, index) => {
+          if (index < selectedRating) {
+            star.innerHTML = "&#9733;";
+          } else {
+            star.innerHTML = "&#9734;";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

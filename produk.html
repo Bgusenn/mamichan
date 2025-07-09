@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mamichan | Produk</title>
+    <link href="dist/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="font-[Poppins] text-[#333] bg-white">
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-50 flex justify-between items-center px-32 py-4 shadow-md bg-white"
+    >
+      <img src="image/logo.png" alt="Mamichan Logo" class="h-12" />
+
+      <nav class="flex ml-24 text-sm text-black gap-16 font-medium">
+        <a
+          href="index.html"
+          class="transition transform duration-300 hover:-translate-y-1"
+          >Home</a
+        >
+        <a
+          href="shop.html"
+          class="transition transform duration-300 hover:-translate-y-1"
+          >Produk</a
+        >
+        <a
+          href="#"
+          class="transition transform duration-300 hover:-translate-y-1"
+          >Tentang Kami</a
+        >
+        <a
+          href="#"
+          class="transition transform duration-300 hover:-translate-y-1"
+          >Kontak</a
+        >
+      </nav>
+
+      <div class="flex gap-6 items-center">
+        <a
+          href="login.html"
+          class="transition transform duration-300 hover:-translate-y-1"
+        >
+          <img src="image/Profile.png" alt="Profile" class="h-5" />
+        </a>
+        <img
+          src="image/Search.png"
+          alt="Search"
+          class="h-5 transition transform duration-300 hover:-translate-y-1"
+        />
+        <a
+          href="review.html"
+          class="transition transform duration-300 hover:-translate-y-1"
+        >
+          <img src="image/Love.png" alt="Favorite" class="h-5" />
+        </a>
+        <a
+          href="cart.html"
+          class="transition transform duration-300 hover:-translate-y-1"
+        >
+          <img src="image/Keranjang.png" alt="Cart" class="h-5" />
+        </a>
+      </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="bg-[#F9F1E7] px-8 py-3 text-sm text-gray-500">
+      <ol class="flex items-center space-x-2">
+        <li>
+          <a href="index.html" class="hover:underline text-gray-600">Home</a>
+        </li>
+        <li>
+          <span> &gt; </span>
+        </li>
+        <li>
+          <a href="shop.html" class="hover:underline text-gray-600">Produk</a>
+        </li>
+        <li>
+          <span> &gt; </span>
+        </li>
+        <li class="text-black font-semibold">Yoora Tunik</li>
+      </ol>
+    </nav>
+
+    <section
+      class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-2 gap-10"
+    >
+      <!-- LEFT: Gambar dan Thumbnail -->
+      <div class="flex gap-4">
+        <!-- Thumbnail samping -->
+        <div class="flex flex-col gap-4">
+          <img
+            src="image/PD1.png"
+            data-image="image/PD1.png"
+            class="thumbnail w-16 h-16 rounded-md cursor-pointer border hover:border-[#7F5539]"
+          />
+          <img
+            src="image/M1.png"
+            data-image="image/M1.png"
+            class="thumbnail w-16 h-16 rounded-md cursor-pointer border hover:border-[#7F5539]"
+          />
+          <img
+            src="image/M2.png"
+            data-image="image/M2.png"
+            class="thumbnail w-16 h-16 rounded-md cursor-pointer border hover:border-[#7F5539]"
+          />
+          <img
+            src="image/M3.png"
+            data-image="image/M3.png"
+            class="thumbnail w-16 h-16 rounded-md cursor-pointer border hover:border-[#7F5539]"
+          />
+        </div>
+
+        <!-- Gambar utama -->
+        <div class="flex-1">
+          <img
+            id="mainImage"
+            src="image/PD1.png"
+            alt="Produk"
+            class="w-full h-auto rounded-lg shadow border border-gray-200"
+          />
+        </div>
+      </div>
+
+      <!-- RIGHT: Informasi Produk -->
+      <div class="space-y-4">
+        <h1 class="text-2xl font-bold">Yoora Tunik</h1>
+        <p class="text-xl text-gray-600 font-semibold">Rp. 60.000,00</p>
+
+        <!-- Bintang dan Review -->
+        <div class="flex items-center space-x-2">
+          <div class="flex text-yellow-400 text-sm">
+            <span>★</span><span>★</span><span>★</span><span>★</span
+            ><span class="text-gray-300">★</span>
+          </div>
+          <p class="text-sm text-gray-500">5 Customer Review</p>
+        </div>
+
+        <!-- Deskripsi -->
+        <p class="text-sm text-gray-600">
+          Mamichan Yoora Tunik Set (BUSUI) – Couple Set Ibu dan Anak - Family
+          Set
+        </p>
+
+        <!-- SIZE -->
+        <div>
+          <p class="mb-2 font-medium">Size</p>
+          <div id="sizeOptions" class="flex gap-2">
+            <span
+              class="size-option px-3 py-1 rounded border border-gray-300 text-sm cursor-pointer"
+              >L</span
+            >
+            <span
+              class="size-option px-3 py-1 rounded border border-gray-300 text-sm cursor-pointer"
+              >XL</span
+            >
+            <span
+              class="size-option px-3 py-1 rounded border border-gray-300 text-sm cursor-pointer"
+              >XS</span
+            >
+          </div>
+        </div>
+
+        <!-- COLOR -->
+        <div>
+          <p class="mb-2 font-medium">Color</p>
+          <div class="flex gap-3">
+            <button
+              class="color-btn w-6 h-6 rounded-full bg-[#403E57] ring-2 ring-transparent hover:ring-[#7F5539] transition"
+              data-image="image/M1.png"
+            ></button>
+            <button
+              class="color-btn w-6 h-6 rounded-full bg-[#F7CDC1] ring-2 ring-transparent hover:ring-[#7F5539] transition"
+              data-image="image/M2.png"
+            ></button>
+            <button
+              class="color-btn w-6 h-6 rounded-full bg-[#EEEAE0] ring-2 ring-transparent hover:ring-[#7F5539] transition"
+              data-image="image/M3.png"
+            ></button>
+          </div>
+        </div>
+
+        <!-- Quantity + Button -->
+        <div class="flex items-center gap-4 pt-4">
+          <!-- Quantity -->
+          <div class="flex border rounded">
+            <button onclick="decrementQty()" class="px-3 py-1 text-xl">
+              -
+            </button>
+            <span id="quantityDisplay" class="px-4 py-1 border-x">1</span>
+            <button onclick="incrementQty()" class="px-3 py-1 text-xl">
+              +
+            </button>
+          </div>
+
+          <!-- Button Add to Cart -->
+          <a id="addToCartBtn" href="cart.html?qty=1">
+            <button
+              class="bg-white px-6 py-2 text-sm font-medium text-black rounded border border-black shadow transition hover:shadow-lg hover:-translate-y-1"
+            >
+              checkout
+            </button>
+          </a>
+
+          <!-- Button Compare -->
+        </div>
+
+        <!-- Informasi tambahan -->
+        <div class="mt-8 text-sm text-gray-600 border-t pt-4 space-y-2">
+          <p><span class="font-semibold">SKU</span> : SS001</p>
+          <p><span class="font-semibold">Category</span> : Pakaian Wanita</p>
+          <p>
+            <span class="font-semibold">Tags</span> : Pakaian Wanita, Set,
+            Pakaian Keluarga
+          </p>
+
+          <div class="flex gap-4 items-center pt-2">
+            <span class="font-semibold">Share</span>
+            <a href="#" class="text-gray-600 hover:text-[#3b5998]">
+              <i class="fab fa-facebook-f text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-[#0077b5]">
+              <i class="fab fa-linkedin-in text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-[#E1306C]">
+              <i class="fab fa-instagram text-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabs & Deskripsi Produk -->
+    <section class="max-w-6xl mx-auto px-6 py-10">
+      <!-- Tab Navigation -->
+      <div class="flex space-x-6 mb-6 items-center justify-center gap-6">
+        <button
+          class="pb-2 font-semibold border-b-2 border-black"
+          onclick="showTab('description')"
+          id="tab-description"
+        >
+          Deskripsi
+        </button>
+        <button
+          class="pb-2 text-gray-500 hover:text-black"
+          onclick="showTab('additional')"
+          id="tab-additional"
+        >
+          Informasi Tambahan
+        </button>
+        <button
+          class="pb-2 text-gray-500 hover:text-black"
+          onclick="showTab('reviews')"
+          id="tab-reviews"
+        >
+          Ulasan [5]
+        </button>
+      </div>
+
+      <!-- Tab Contents -->
+      <div id="tab-content">
+        <!-- Description Tab (Default) -->
+        <div
+          id="description"
+          class="space-y-4 text-sm text-gray-700 leading-relaxed"
+        >
+          <p>
+            🌸<strong
+              >SIZE CHART IBU (BU/ BUSUI FRIENDLY BUKAAN KANAN KIRI)</strong
+            >🌸<br />
+            M/L = LD 102cm / P 75cm<br />
+            L/XL = LD 110cm / P 75cm<br />
+            XXL (tambahan 20rb) = LD 120cm / P 80cm<br />
+            LD = Lingkar Dada / P = Panjang Tunik
+          </p>
+          <p class="text-xs text-gray-500">
+            *TOLERANSI 2-3CM KARENA BAHAN KAOS HASIL JAHIT AKAN LEBIH BESAR*
+          </p>
+
+          <!-- Gambar Tambahan -->
+          <div class="flex gap-4 mt-8">
+            <img
+              src="image/background 3.png"
+              alt="Varian 1"
+              class="w-1/2 max-h-[348px] rounded-lg"
+            />
+            <img
+              src="image/background 4.png"
+              alt="Varian 2"
+              class="w-1/2 max-h-[348px] rounded-lg"
+            />
+          </div>
+        </div>
+
+        <!-- Additional Information Tab -->
+        <div id="additional" class="hidden text-sm text-gray-700">
+          <p>
+            • Bahan: Cotton Combed 30s<br />• Nyaman dipakai<br />• Tidak
+            panas<br />• Warna tidak mudah luntur
+          </p>
+        </div>
+
+        <!-- Reviews Tab -->
+        <div id="reviews" class="hidden text-sm text-gray-700 space-y-4">
+          <p class="font-semibold text-base">
+            ⭐️⭐️⭐️⭐️⭐️ - 5.0 (5 Reviews)
+          </p>
+
+          <!-- Review 1 -->
+          <div class="pb-4">
+            <p class="font-medium">Ibu Nisa</p>
+            <div class="flex items-center text-yellow-400 text-sm mb-1">
+              <span>★</span><span>★</span><span>★</span><span>★</span
+              ><span>★</span>
+            </div>
+            <p>Bahannya adem dan nyaman dipakai, cocok buat harian!</p>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="pb-4">
+            <p class="font-medium">Ibu Rina</p>
+            <div class="flex items-center text-yellow-400 text-sm mb-1">
+              <span>★</span><span>★</span><span>★</span><span>★</span
+              ><span>☆</span>
+            </div>
+            <p>
+              Ukuran pas, pengiriman cepat. Hanya saja warnanya agak beda dikit
+              dari foto.
+            </p>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="pb-4">
+            <p class="font-medium">Ibu Diah</p>
+            <div class="flex items-center text-yellow-400 text-sm mb-1">
+              <span>★</span><span>★</span><span>★</span><span>★</span
+              ><span>★</span>
+            </div>
+            <p>Motifnya bagus, anak saya suka. Bahan lembut juga.</p>
+          </div>
+
+          <!-- Review 4 -->
+          <div class="pb-4">
+            <p class="font-medium">Ibu Maya</p>
+            <div class="flex items-center text-yellow-400 text-sm mb-1">
+              <span>★</span><span>★</span><span>★</span><span>★</span
+              ><span>★</span>
+            </div>
+            <p>Akan order lagi karena sangat puas dengan kualitasnya!</p>
+          </div>
+
+          <!-- Review 5 -->
+          <div>
+            <p class="font-medium">Ibu Sari</p>
+            <div class="flex items-center text-yellow-400 text-sm mb-1">
+              <span>★</span><span>★</span><span>★</span><span>★</span
+              ><span>☆</span>
+            </div>
+            <p>Worth it banget untuk harga segini. Bisa jadi andalan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Related Products -->
+    <section class="bg-gray-100 py-12 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-semibold text-center mb-10">
+          Related Products
+        </h2>
+
+        <!-- Produk Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+          <!-- Card 1 -->
+          <div>
+            <img src="image/RD1.png" class="rounded mb-2" />
+            <h3 class="font-semibold text-xl mb-2">HANNA</h3>
+            <p class="text-xs mb-2 text-gray-500">Baju Couple Keluarga</p>
+            <p class="text-lg font-semibold">
+              Rp 52.000
+              <span class="text-gray-400 ml-2 line-through text-xs"
+                >Rp 62.000</span
+              >
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div>
+            <img src="image/RD2.png" class="rounded mb-2" />
+            <h3 class="font-semibold text-xl mb-2">Nayara Cameo</h3>
+            <p class="text-xs mb-2 text-gray-500">Baju Couple Keluarga</p>
+            <p class="text-lg font-semibold">Rp 66.500</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div>
+            <img src="image/RD3.png" class="rounded mb-2" />
+            <h3 class="font-semibold text-xl mb-2">Nayara Rustic</h3>
+            <p class="text-xs text-gray-500 mb-2">Baju Couple Keluarga</p>
+            <p class="text-lg font-semibold">Rp 66.500</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div>
+            <img src="image/RD4.png" class="rounded mb-2" />
+            <h3 class="font-semibold text-xl">FUMI</h3>
+            <p class="text-xs text-gray-500 mb-2">Baju Couple Keluarga</p>
+            <p class="text-lg font-semibold">Rp 60.000</p>
+          </div>
+        </div>
+
+        <!-- Tombol Show More -->
+        <div class="text-center mt-10">
+          <button
+            class="px-12 py-2 border border-[#B88E2F] text-[#B88E2F] font-semibold rounded hover:bg-[#B88E2F] hover:text-white transition duration-300"
+          >
+            lihat lainnya
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="bg-[#FAF3EA] py-12">
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-6 px-6 lg:px-32 text-center"
+      >
+        <div>
+          <img
+            src="image/trophy.png"
+            alt="High Quality"
+            class="mx-auto h-12 mb-2"
+          />
+          <h4 class="font-semibold">Kualitas Terbaik</h4>
+          <p class="text-sm text-gray-600">Terbuat dari bahan terbaik</p>
+        </div>
+        <div>
+          <img
+            src="image/guarantee.png"
+            alt="Warranty Protection"
+            class="mx-auto h-12 mb-2"
+          />
+          <h4 class="font-semibold">Perlindungan Garansi</h4>
+          <p class="text-sm text-gray-600">6 Bulan</p>
+        </div>
+        <div>
+          <img
+            src="image/shipping.png"
+            alt="Free Shipping"
+            class="mx-auto h-12 mb-2"
+          />
+          <h4 class="font-semibold">Pengiriman gratis</h4>
+          <p class="text-sm text-gray-600">Pembelian lebih dari 250.000</p>
+        </div>
+        <div>
+          <img
+            src="image/cs.png"
+            alt="24 / 7 Support"
+            class="mx-auto h-12 mb-2"
+          />
+          <h4 class="font-semibold">Layanan 24/7</h4>
+          <p class="text-sm text-gray-600">Layanan Khusus</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-10 px-6">
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto text-sm"
+      >
+        <div>
+          <h4 class="font-semibold mb-2">Mamichan</h4>
+          <p>
+            Jl. Kaliurang KM 10, Sleman, <br />
+            Daerah Istimewa Yogyakarta 55581, Indonesia
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2 gap-x-24">Link</h4>
+          <a href="shop.html" class="block hover:underline">Home</a>
+          <a href="shop.html" class="block hover:underline">Produk</a>
+          <a href="#" class="block hover:underline">Tentang kami</a>
+          <a href="#" class="block hover:underline">Kontak</a>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Bantuan</h4>
+          <a href="#" class="block hover:underline">Opsi Pembayaran</a>
+          <a href="#" class="block hover:underline">Pengembalian</a>
+          <a href="#" class="block hover:underline">Kebijakan Privasi</a>
+        </div>
+      </div>
+      <div class="text-center text-xs mt-6 text-gray-500">
+        © 2025 Mamichan. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Script Ganti Gambar -->
+    <script>
+      const sizeOptions = document.querySelectorAll(".size-option");
+
+      sizeOptions.forEach((option) => {
+        option.addEventListener("click", () => {
+          sizeOptions.forEach((el) =>
+            el.classList.remove("bg-[#EEEAE0]", "font-semibold")
+          );
+          option.classList.add("bg-[#EEEAE0]", "font-semibold");
+        });
+      });
+
+      let quantity = 1;
+
+      function updateDisplay() {
+        document.getElementById("quantityDisplay").textContent = quantity;
+        document.getElementById("addToCartBtn").href =
+          "cart.html?qty=" + quantity;
+      }
+
+      function incrementQty() {
+        quantity++;
+        updateDisplay();
+      }
+
+      function decrementQty() {
+        if (quantity > 1) {
+          quantity--;
+          updateDisplay();
+        }
+      }
+
+      // Optional: call update once on load
+      updateDisplay();
+
+      function showTab(tabId) {
+        // Sembunyikan semua tab
+        document.querySelectorAll("#tab-content > div").forEach((el) => {
+          el.classList.add("hidden");
+        });
+
+        // Hapus styling aktif di semua tombol
+        document.querySelectorAll("button[id^='tab-']").forEach((btn) => {
+          btn.classList.remove("border-b-2", "border-black", "text-black");
+          btn.classList.add("text-gray-500");
+        });
+
+        // Tampilkan tab yang dipilih
+        document.getElementById(tabId).classList.remove("hidden");
+
+        // Tambahkan style aktif ke tombol yang diklik
+        document
+          .getElementById("tab-" + tabId)
+          .classList.add("border-b-2", "border-black", "text-black");
+        document
+          .getElementById("tab-" + tabId)
+          .classList.remove("text-gray-500");
+      }
+      const thumbnails = document.querySelectorAll(".thumbnail");
+      const colorButtons = document.querySelectorAll(".color-btn");
+      const mainImage = document.getElementById("mainImage");
+
+      // Ganti gambar dari thumbnail
+      thumbnails.forEach((thumb) => {
+        thumb.addEventListener("click", () => {
+          const img = thumb.getAttribute("data-image");
+          mainImage.src = img;
+        });
+      });
+
+      // Ganti gambar dari tombol warna
+      colorButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const img = btn.getAttribute("data-image");
+          mainImage.src = img;
+
+          // Highlight tombol aktif
+          colorButtons.forEach((b) => b.classList.remove("ring-[#7F5539]"));
+          btn.classList.add("ring-[#7F5539]");
+        });
+      });
+    </script>
+  </body>
+</html>

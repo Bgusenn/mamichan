@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mamichan | Shop</title>
+    <link href="dist/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-[Poppins] bg-white text-[#333]">
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-50 flex justify-between items-center px-32 py-4 shadow-md bg-white"
+    >
+      <img src="image/logo.png" alt="Mamichan Logo" class="h-12" />
+
+      <nav class="flex ml-24 text-sm text-black gap-16 font-medium">
+        <a
+          href="index.html"
+          class="transition transform duration-300 hover:-translate-y-1"
+          >Home</a
+        >
+        <a
+          href="shop.html"
+          class="transition transform duration-300 hover:-translate-y-1"
+          >Produk</a
+        >
+        <a
+          href="#"
+          class="transition transform duration-300 hover:-translate-y-1"
+          >Tentang Kami</a
+        >
+        <a
+          href="#"
+          class="transition transform duration-300 hover:-translate-y-1"
+          >Kontak</a
+        >
+      </nav>
+
+      <div class="flex gap-6 items-center">
+        <a
+          href="login.html"
+          class="transition transform duration-300 hover:-translate-y-1"
+        >
+          <img src="image/Profile.png" alt="Profile" class="h-5" />
+        </a>
+        <img
+          src="image/Search.png"
+          alt="Search"
+          class="h-5 transition transform duration-300 hover:-translate-y-1"
+        />
+        <a
+          href="review.html"
+          class="transition transform duration-300 hover:-translate-y-1"
+        >
+          <img src="image/Love.png" alt="Favorite" class="h-5" />
+        </a>
+        <a
+          href="cart.html"
+          class="transition transform duration-300 hover:-translate-y-1"
+        >
+          <img src="image/Keranjang.png" alt="Cart" class="h-5" />
+        </a>
+      </div>
+    </header>
+
+    <!-- Shop Hero Section -->
+    <section class="relative w-full h-[320px]">
+      <!-- Gambar banner -->
+      <img
+        src="image/backgorund2.png"
+        alt="Banner Produk"
+        class="w-full h-full object-cover"
+      />
+
+      <!-- Konten teks di atas gambar -->
+      <div
+        class="absolute inset-0 flex flex-col items-center justify-center z-10 text-center"
+      >
+        <h1 class="text-4xl font-bold mb-2">Produk</h1>
+        <p class="text-sm">
+          <a href="index.html" class="hover:underline">Home</a>
+          &gt; Produk
+        </p>
+      </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="py-12 px-6 lg:px-32">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+      >
+        <!-- Repeat this block for each product -->
+        <div class="bg-gray-100 shadow rounded-lg overflow-hidden group">
+          <div class="relative">
+            <a href="produk.html">
+              <img
+                src="image/P1.png"
+                alt="Zalina Series"
+                class="w-full h-72 object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center opacity-0 group-hover:opacity-80 transition"
+              >
+                <button
+                  class="bg-white px-4 py-2 text-sm font-medium text-black rounded shadow transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 text-left">
+            <h4 class="font-semibold text-xl mb-2">Hanna</h4>
+            <p class="text-sm text-gray-500">Baju Couple Keluarga</p>
+            <p class="text-sm mt-2">
+              <span class="font-bold text-xl">Rp 52.000</span>
+              <del class="text-gray-400 ml-4">Rp 72.000</del>
+            </p>
+          </div>
+        </div>
+        <!-- Ulangi untuk produk lainnya -->
+        <div class="bg-gray-100 shadow rounded-lg overflow-hidden group">
+          <div class="relative">
+            <a href="produk.html">
+              <img
+                src="image/P3.png"
+                alt="Zalina Series"
+                class="w-full h-72 object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center opacity-0 group-hover:opacity-80 transition"
+              >
+                <button
+                  class="bg-white px-4 py-2 text-sm font-medium text-black rounded shadow transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 text-left">
+            <h4 class="font-semibold text-xl mb-2">Memorie Marigold</h4>
+            <p class="text-sm text-gray-500">Baju Couple Keluarga</p>
+            <p class="text-sm mt-2">
+              <span class="font-bold text-xl">Rp 64.000</span>
+            </p>
+          </div>
+        </div>
+        <div class="bg-gray-100 shadow rounded-lg overflow-hidden group">
+          <div class="relative">
+            <a href="produk.html">
+              <img
+                src="image/P7.png"
+                alt="Zalina Series"
+                class="w-full h-72 object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center opacity-0 group-hover:opacity-80 transition"
+              >
+                <button
+                  class="bg-white px-4 py-2 text-sm font-medium text-black rounded shadow transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 text-left">
+            <h4 class="font-semibold text-xl mb-2">Stripe Rib Black</h4>
+            <p class="text-sm text-gray-500">Baju Couple Keluarga</p>
+            <p class="text-sm mt-2">
+              <span class="font-bold text-xl">Rp 67.500</span>
+              <del class="text-gray-400 ml-4">Rp 87.500</del>
+            </p>
+          </div>
+        </div>
+        <div class="bg-gray-100 shadow rounded-lg overflow-hidden group">
+          <div class="relative">
+            <a href="produk.html">
+              <img
+                src="image/P10.png"
+                alt="Zalina Series"
+                class="w-full h-72 object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center opacity-0 group-hover:opacity-80 transition"
+              >
+                <button
+                  class="bg-white px-4 py-2 text-sm font-medium text-black rounded shadow transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 text-left">
+            <h4 class="font-semibold text-xl mb-2">Amora</h4>
+            <p class="text-sm text-gray-500">Baju Couple Keluarga</p>
+            <p class="text-sm mt-2">
+              <span class="font-bold text-xl">Rp 60.000</span>
+            </p>
+          </div>
+        </div>
+        <div class="bg-gray-100 shadow rounded-lg overflow-hidden group">
+          <div class="relative">
+            <a href="produk.html">
+              <img
+                src="image/P14.png"
+                alt="Zalina Series"
+                class="w-full h-72 object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center opacity-0 group-hover:opacity-80 transition"
+              >
+                <button
+                  class="bg-white px-4 py-2 text-sm font-medium text-black rounded shadow transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 text-left">
+            <h4 class="font-semibold text-xl mb-2">Zalina Series</h4>
+            <p class="text-sm text-gray-500">Baju Couple Keluarga</p>
+            <p class="text-sm mt-2">
+              <span class="font-bold text-xl">Rp 72.000</span>
+              <del class="text-gray-400 ml-4">Rp 92.000</del>
+            </p>
+          </div>
+        </div>
+        <div class="bg-gray-100 shadow rounded-lg overflow-hidden group">
+          <div class="relative">
+            <a href="produk.html">
+              <img
+                src="image/P4.png"
+                alt="Zalina Series"
+                class="w-full h-72 object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center opacity-0 group-hover:opacity-80 transition"
+              >
+                <button
+                  class="bg-white px-4 py-2 text-sm font-medium text-black rounded shadow transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 text-left">
+            <h4 class="font-semibold text-xl mb-2">Zalina</h4>
+            <p class="text-sm text-gray-500">Baju Couple Keluarga</p>
+            <p class="text-sm mt-2">
+              <span class="font-bold text-xl">Rp 72.000</span>
+              <del class="text-gray-400 ml-4">Rp 65.000</del>
+            </p>
+          </div>
+        </div>
+        <div class="bg-gray-100 shadow rounded-lg overflow-hidden group">
+          <div class="relative">
+            <a href="produk.html">
+              <img
+                src="image/P8.png"
+                alt="Zalina Series"
+                class="w-full h-72 object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center opacity-0 group-hover:opacity-80 transition"
+              >
+                <button
+                  class="bg-white px-4 py-2 text-sm font-medium text-black rounded shadow transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 text-left">
+            <h4 class="font-semibold text-xl mb-2">Nayara Rustic</h4>
+            <p class="text-sm text-gray-500">Baju Couple Keluarga</p>
+            <p class="text-sm mt-2">
+              <span class="font-bold text-xl">Rp 66.500</span>
+              <del class="text-gray-400 ml-4">Rp 88.500</del>
+            </p>
+          </div>
+        </div>
+        <div class="bg-gray-100 shadow rounded-lg overflow-hidden group">
+          <div class="relative">
+            <a href="produk.html">
+              <img
+                src="image/P11.png"
+                alt="Zalina Series"
+                class="w-full h-72 object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center opacity-0 group-hover:opacity-80 transition"
+              >
+                <button
+                  class="bg-white px-4 py-2 text-sm font-medium text-black rounded shadow transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 text-left">
+            <h4 class="font-semibold text-xl mb-2">Zalina Series</h4>
+            <p class="text-sm text-gray-500">Baju Couple Keluarga</p>
+            <p class="text-sm mt-2">
+              <span class="font-bold text-xl">Rp 72.000</span>
+            </p>
+          </div>
+        </div>
+        <div class="bg-gray-100 shadow rounded-lg overflow-hidden group">
+          <div class="relative">
+            <a href="produk.html">
+              <img
+                src="image/P15.png"
+                alt="Zalina Series"
+                class="w-full h-72 object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center opacity-0 group-hover:opacity-80 transition"
+              >
+                <button
+                  class="bg-white px-4 py-2 text-sm font-medium text-black rounded shadow transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 text-left">
+            <h4 class="font-semibold text-xl mb-2">Stripe Rib White</h4>
+            <p class="text-sm text-gray-500">Baju Couple Keluarga</p>
+            <p class="text-sm mt-2">
+              <span class="font-bold text-xl">Rp 67.500</span>
+              <del class="text-gray-400 ml-4">Rp 97.500</del>
+            </p>
+          </div>
+        </div>
+        <div class="bg-gray-100 shadow rounded-lg overflow-hidden group">
+          <div class="relative">
+            <a href="produk.html">
+              <img
+                src="image/P5.png"
+                alt="Zalina Series"
+                class="w-full h-72 object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center opacity-0 group-hover:opacity-80 transition"
+              >
+                <button
+                  class="bg-white px-4 py-2 text-sm font-medium text-black rounded shadow transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 text-left">
+            <h4 class="font-semibold text-xl mb-2">Leviosa</h4>
+            <p class="text-sm text-gray-500">Baju Couple Keluarga</p>
+            <p class="text-sm mt-2">
+              <span class="font-bold text-xl">Rp 72.000</span>
+            </p>
+          </div>
+        </div>
+        <div class="bg-gray-100 shadow rounded-lg overflow-hidden group">
+          <div class="relative">
+            <a href="produk.html">
+              <img
+                src="image/P16.png"
+                alt="Zalina Series"
+                class="w-full h-72 object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center opacity-0 group-hover:opacity-80 transition"
+              >
+                <button
+                  class="bg-white px-4 py-2 text-sm font-medium text-black rounded shadow transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 text-left">
+            <h4 class="font-semibold text-xl mb-2">Lolito</h4>
+            <p class="text-sm text-gray-500">Baju Couple Keluarga</p>
+            <p class="text-sm mt-2">
+              <span class="font-bold text-xl">Rp 7.000.000</span>
+              <del class="text-gray-400 ml-4">Rp 14.000.000</del>
+            </p>
+          </div>
+        </div>
+        <div class="bg-gray-100 shadow rounded-lg overflow-hidden group">
+          <div class="relative">
+            <a href="produk.html">
+              <img
+                src="image/P12.png"
+                alt="Zalina Series"
+                class="w-full h-72 object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center opacity-0 group-hover:opacity-80 transition"
+              >
+                <button
+                  class="bg-white px-4 py-2 text-sm font-medium text-black rounded shadow transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 text-left">
+            <h4 class="font-semibold text-xl mb-2">Respira</h4>
+            <p class="text-sm text-gray-500">Baju Couple Keluarga</p>
+            <p class="text-sm mt-2">
+              <span class="font-bold text-xl">Rp 500.000</span>
+            </p>
+          </div>
+        </div>
+        <div class="bg-gray-100 shadow rounded-lg overflow-hidden group">
+          <div class="relative">
+            <a href="produk.html">
+              <img
+                src="image/P2.png"
+                alt="Zalina Series"
+                class="w-full h-72 object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center opacity-0 group-hover:opacity-80 transition"
+              >
+                <button
+                  class="bg-white px-4 py-2 text-sm font-medium text-black rounded shadow transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 text-left">
+            <h4 class="font-semibold text-xl mb-2">Zalina Series</h4>
+            <p class="text-sm text-gray-500">Baju Couple Keluarga</p>
+            <p class="text-sm mt-2">
+              <span class="font-bold text-xl">Rp 65.000</span>
+              <del class="text-gray-400 ml-4">Rp 92.000</del>
+            </p>
+          </div>
+        </div>
+        <div class="bg-gray-100 shadow rounded-lg overflow-hidden group">
+          <div class="relative">
+            <a href="produk.html">
+              <img
+                src="image/P6.png"
+                alt="Zalina Series"
+                class="w-full h-72 object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center opacity-0 group-hover:opacity-80 transition"
+              >
+                <button
+                  class="bg-white px-4 py-2 text-sm font-medium text-black rounded shadow transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 text-left">
+            <h4 class="font-semibold text-xl mb-2">Yoora Tunik</h4>
+            <p class="text-sm text-gray-500">Baju Couple Keluarga</p>
+            <p class="text-sm mt-2">
+              <span class="font-bold text-xl">Rp 60.000</span>
+            </p>
+          </div>
+        </div>
+        <div class="bg-gray-100 shadow rounded-lg overflow-hidden group">
+          <div class="relative">
+            <a href="produk.html">
+              <img
+                src="image/P9.png"
+                alt="Zalina Series"
+                class="w-full h-72 object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center opacity-0 group-hover:opacity-80 transition"
+              >
+                <button
+                  class="bg-white px-4 py-2 text-sm font-medium text-black rounded shadow transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 text-left">
+            <h4 class="font-semibold text-xl mb-2">FUMI</h4>
+            <p class="text-sm text-gray-500">Baju Couple Keluarga</p>
+            <p class="text-sm mt-2">
+              <span class="font-bold text-xl">Rp 63.750</span>
+              <del class="text-gray-400 ml-4">Rp 83.750</del>
+            </p>
+          </div>
+        </div>
+        <div class="bg-gray-100 shadow rounded-lg overflow-hidden group">
+          <div class="relative">
+            <a href="produk.html">
+              <img
+                src="image/P13.png"
+                alt="Zalina Series"
+                class="w-full h-72 object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center opacity-0 group-hover:opacity-80 transition"
+              >
+                <button
+                  class="bg-white px-4 py-2 text-sm font-medium text-black rounded shadow transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 text-left">
+            <h4 class="font-semibold text-xl mb-2">FUMI</h4>
+            <p class="text-sm text-gray-500">Baju Couple Keluarga</p>
+            <p class="text-sm mt-2">
+              <span class="font-bold text-xl">Rp 60.000</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="bg-[#FAF3EA] py-12">
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-6 px-6 lg:px-32 text-center"
+      >
+        <div>
+          <img
+            src="image/trophy.png"
+            alt="High Quality"
+            class="mx-auto h-12 mb-2"
+          />
+          <h4 class="font-semibold">Kualitas Terbaik</h4>
+          <p class="text-sm text-gray-600">Terbuat dari bahan terbaik</p>
+        </div>
+        <div>
+          <img
+            src="image/guarantee.png"
+            alt="Warranty Protection"
+            class="mx-auto h-12 mb-2"
+          />
+          <h4 class="font-semibold">Perlindungan Garansi</h4>
+          <p class="text-sm text-gray-600">6 Bulan</p>
+        </div>
+        <div>
+          <img
+            src="image/shipping.png"
+            alt="Free Shipping"
+            class="mx-auto h-12 mb-2"
+          />
+          <h4 class="font-semibold">Pengiriman gratis</h4>
+          <p class="text-sm text-gray-600">Pembelian lebih dari 250.000</p>
+        </div>
+        <div>
+          <img
+            src="image/cs.png"
+            alt="24 / 7 Support"
+            class="mx-auto h-12 mb-2"
+          />
+          <h4 class="font-semibold">Layanan 24/7</h4>
+          <p class="text-sm text-gray-600">Layanan Khusus</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-10 px-6">
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto text-sm"
+      >
+        <div>
+          <h4 class="font-semibold mb-2">Mamichan</h4>
+          <p>
+            Jl. Kaliurang KM 10, Sleman, <br />
+            Daerah Istimewa Yogyakarta 55581, Indonesia
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2 gap-x-24">Link</h4>
+          <a href="shop.html" class="block hover:underline">Home</a>
+          <a href="shop.html" class="block hover:underline">Produk</a>
+          <a href="#" class="block hover:underline">Tentang kami</a>
+          <a href="#" class="block hover:underline">Kontak</a>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Bantuan</h4>
+          <a href="#" class="block hover:underline">Opsi Pembayaran</a>
+          <a href="#" class="block hover:underline">Pengembalian</a>
+          <a href="#" class="block hover:underline">Kebijakan Privasi</a>
+        </div>
+      </div>
+      <div class="text-center text-xs mt-6 text-gray-500">
+        © 2025 Mamichan. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
