@@ -1,134 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Dashboard | Mamichan</title>
-    <link href="../dist/output.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+    <title>Dashboard Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-100 font-[Poppins]">
-    <div class="flex h-screen">
+  <body class="bg-gray-100 text-gray-800">
+    <div class="flex min-h-screen">
       <!-- Sidebar -->
-      <aside class="w-64 bg-white shadow-lg hidden md:block">
-        <div class="px-6 py-4 text-xl font-bold">LOGO</div>
-        <nav class="mt-4 space-y-2">
+      <aside class="w-64 bg-white shadow-md">
+        <div class="p-6 text-2xl font-bold text-[#7F5539]">Panel Admin</div>
+        <nav class="mt-6">
           <a
-            href="#"
-            class="flex items-center gap-2 px-6 py-2 text-gray-700 hover:bg-gray-100 rounded"
+            href="dashboard.html"
+            class="block px-6 py-2 bg-[#7F5539] text-white rounded"
+            >Dashboard</a
           >
-            <i class="fas fa-chart-line"></i> Dashboard
-          </a>
           <a
-            href="#"
-            class="flex items-center gap-2 px-6 py-2 text-gray-700 hover:bg-gray-100 rounded"
+            href="customers.html"
+            class="block px-6 py-2 text-gray-700 hover:bg-[#7F5539] hover:text-white rounded"
+            >Customer</a
           >
-            <i class="fas fa-box"></i> Orders
-          </a>
           <a
-            href="#"
-            class="flex items-center gap-2 px-6 py-2 text-gray-700 hover:bg-gray-100 rounded"
+            href="produk.html"
+            class="block px-6 py-2 text-gray-700 hover:bg-[#7F5539] hover:text-white rounded"
+            >Produk</a
           >
-            <i class="fas fa-tag"></i> Products
-          </a>
-          <a
-            href="#"
-            class="flex items-center gap-2 px-6 py-2 text-gray-700 hover:bg-gray-100 rounded"
-          >
-            <i class="fas fa-users"></i> Users
-          </a>
-          <a
-            href="#"
-            class="flex items-center gap-2 px-6 py-2 text-gray-700 hover:bg-gray-100 rounded"
-          >
-            <i class="fas fa-comments"></i> Reviews
-          </a>
         </nav>
       </aside>
 
-      <!-- Main Content -->
-      <div class="flex-1 flex flex-col">
-        <!-- Navbar -->
-        <header
-          class="bg-white shadow-lg px-6 py-4 flex items-center justify-end"
-        >
-          <div class="flex items-center gap-3 text-sm text-gray-600">
-            <span>Admin</span>
-            <i class="fas fa-user-circle text-xl"></i>
-          </div>
-        </header>
+      <!-- Konten Utama -->
+      <main class="flex-1 p-8">
+        <h1 class="text-3xl font-semibold mb-6">Dashboard Admin</h1>
 
-        <!-- Main Dashboard Content -->
-        <main class="p-6 overflow-y-auto">
-          <div class="py-2 mb-4">
-            <h1 class="text-2xl font-semibold">Dashboard Admin</h1>
+        <!-- Statistik -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div class="bg-white rounded-lg shadow p-6">
+            <h2 class="text-gray-500 text-sm">Total Customer</h2>
+            <p class="text-2xl font-bold mt-2">120</p>
           </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="bg-white p-4 rounded shadow">
-              <p class="text-sm text-gray-500 flex items-center gap-2">
-                <i class="fas fa-box-open"></i> Orders
-              </p>
-              <p class="text-xl font-semibold">150</p>
-            </div>
-            <div class="bg-white p-4 rounded shadow">
-              <p class="text-sm text-gray-500 flex items-center gap-2">
-                <i class="fas fa-tags"></i> Products
-              </p>
-              <p class="text-xl font-semibold">35</p>
-            </div>
-            <div class="bg-white p-4 rounded shadow">
-              <p class="text-sm text-gray-500 flex items-center gap-2">
-                <i class="fas fa-users"></i> Users
-              </p>
-              <p class="text-xl font-semibold">1,250</p>
-            </div>
-            <div class="bg-white p-4 rounded shadow">
-              <p class="text-sm text-gray-500 flex items-center gap-2">
-                <i class="fas fa-comment"></i> Reviews
-              </p>
-              <p class="text-xl font-semibold">87</p>
-            </div>
+          <div class="bg-white rounded-lg shadow p-6">
+            <h2 class="text-gray-500 text-sm">Total Produk</h2>
+            <p class="text-2xl font-bold mt-2">45</p>
           </div>
+          <div class="bg-white rounded-lg shadow p-6">
+            <h2 class="text-gray-500 text-sm">Total Pesanan</h2>
+            <p class="text-2xl font-bold mt-2">75</p>
+          </div>
+        </div>
 
-          <!-- Latest Orders Table -->
-          <div class="mt-10 bg-white rounded shadow overflow-x-auto">
-            <table class="min-w-full text-sm">
-              <thead>
-                <tr class="bg-gray-50 text-left">
-                  <th class="px-6 py-3 font-medium text-gray-600">Order ID</th>
-                  <th class="px-6 py-3 font-medium text-gray-600">Customer</th>
-                  <th class="px-6 py-3 font-medium text-gray-600">Date</th>
-                  <th class="px-6 py-3 font-medium text-gray-600">Total</th>
-                  <th class="px-6 py-3 font-medium text-gray-600">Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="border-t">
-                  <td class="px-6 py-4">#1001</td>
-                  <td class="px-6 py-4">Nisa</td>
-                  <td class="px-6 py-4">03 Jul 2025</td>
-                  <td class="px-6 py-4">Rp 120.000</td>
-                  <td class="px-6 py-4 text-green-600">Completed</td>
-                </tr>
-                <tr class="border-t">
-                  <td class="px-6 py-4">#1002</td>
-                  <td class="px-6 py-4">Rina</td>
-                  <td class="px-6 py-4">02 Jul 2025</td>
-                  <td class="px-6 py-4">Rp 180.000</td>
-                  <td class="px-6 py-4 text-yellow-600">Pending</td>
-                </tr>
-              </tbody>
-            </table>
+        <!-- Pesanan Terbaru -->
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <div class="p-4 border-b border-gray-200">
+            <h2 class="text-lg font-semibold">Pesanan Terbaru</h2>
           </div>
-        </main>
-      </div>
+          <table class="min-w-full table-auto border-collapse">
+            <thead class="bg-[#7F5539] text-white">
+              <tr>
+                <th class="px-6 py-3 text-left text-sm font-medium">No</th>
+                <th class="px-6 py-3 text-left text-sm font-medium">
+                  Nama Customer
+                </th>
+                <th class="px-6 py-3 text-left text-sm font-medium">Produk</th>
+                <th class="px-6 py-3 text-left text-sm font-medium">Total</th>
+                <th class="px-6 py-3 text-left text-sm font-medium">Status</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr>
+                <td class="px-6 py-4 text-sm">1</td>
+                <td class="px-6 py-4 text-sm">Bagus Eko Nugroho</td>
+                <td class="px-6 py-4 text-sm">Baju Menyusui Sakura</td>
+                <td class="px-6 py-4 text-sm">Rp 250.000</td>
+                <td class="px-6 py-4 text-sm">
+                  <span class="px-3 py-1 bg-green-200 text-green-800 rounded"
+                    >Selesai</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-sm">2</td>
+                <td class="px-6 py-4 text-sm">Ayu Lestari</td>
+                <td class="px-6 py-4 text-sm">Couple Set Mom & Dad</td>
+                <td class="px-6 py-4 text-sm">Rp 450.000</td>
+                <td class="px-6 py-4 text-sm">
+                  <span class="px-3 py-1 bg-yellow-200 text-yellow-800 rounded"
+                    >Proses</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
     </div>
   </body>
 </html>
